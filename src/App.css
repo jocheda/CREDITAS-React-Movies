@@ -116,6 +116,10 @@ body {
     font-size: 14px;
 }
 
+.information-detail p {
+    color: #999;
+}
+
 .information-detail a {
     text-decoration: none;
 }

@@ -72,7 +72,7 @@ class MovieDetail extends Component {
                   <span>
                     {movie.adult ? "Si" : "No"}
                   </span><br />
-                  <span>Genero: </span><span>{movie.genres[0].name}</span><br />
+                  <span>Genero: </span><span>{movie.genres.map(mov => mov.name + ', ')}</span><br />
                 </p>
                 {movie.homepage && <a href={movie.homepage}>{movie.homepage}</a>}
                 <h3>Detalles</h3>
