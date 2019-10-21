@@ -1,22 +1,163 @@
-.App {
-  text-align: center;
+/* MAIN LAYOUT */
+
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+a {
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:visited {
+    color: inherit;
 }
 
-.App-link {
-  color: #09d3ac;
+button {
+    border-radius: 0.5em;
+}
+
+body {
+    line-height: 1.7;
+    background-color: #131313;
+}
+
+.app {
+    min-height: 100vh;
+    /*     display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start; */
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1.5em;
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1em;
+}
+
+.movie {
+    min-width: 250px;
+}
+
+.movie-list a {
+    justify-items: center;
+    text-align: center;
+}
+
+.movie-list a div {
+    background-color: #000;
+    border-radius: 0.3em;
+    margin-bottom: 3em;
+}
+
+.movie-list p {
+    margin: 0 20px;
+    padding: 0;
+    font-size: 0.8em;
+    color: white;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+.movie-description {
+    background-color: red;
+}
+
+.goBack {
+    list-style-type: none;
+    font-size: .7em;
+}
+
+.goBack li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.goBack li:first-child {
+    font-weight: bold;
+}
+
+.category {
+    margin-top: 10px;
+}
+
+.category a {
+    padding: 5px;
+}
+
+.movie-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1em;
+}
+
+.photo-detail {
+    width: 40%;
+}
+
+.photo-detail img {
+    width: 100%;
+}
+
+.information-detail {
+    width: 50%;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.information-detail a {
+    text-decoration: none;
+}
+
+.information-detail>h3 {
+    margin-top: 2em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #444;
+}
+
+.information-detail p span:nth-child(1n+1) {
+    color: #999;
+}
+
+.information-detail p span:nth-child(3n+1) {
+    color: #fff;
+}
+
+.detail h1 {
+    font-size: 1.3em;
+    margin: 1em;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+.not-found h1 {
+    font-size: 12em;
+    margin: .2em .5em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0px;
+}
+
+.not-found h2 {
+    font-size: 1.7em;
+    margin: .2em .5em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+div.not-found {
+    background: url(https://38.media.tumblr.com/546c0cd48d71f210f9b67a389003790d/tumblr_neq0yw9rMA1tm16jjo1_500.gif) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    width: 100%;
+    text-align: center;
 }
